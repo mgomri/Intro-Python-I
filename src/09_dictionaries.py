@@ -35,7 +35,7 @@ waypoints = [
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
-waypoints.append({'lat': 11, 'lon': 5, 'name': 'a space-time continum'})
+waypoints.append({'lat': 11, 'lon': 5, 'name': 'a space-time continuum'})
 print(waypoints)
 
 
@@ -43,8 +43,11 @@ print(waypoints)
 # value is -130 and change its name to "not a real place"
 # Note: It's okay to access the dictionary using bracket notation on the
 # waypoints list.
-
 # YOUR CODE HERE
-
+waypoints[0] = { 'lat': 43, 'lon': -130, 'name': 'not a real place'}
+print(waypoints)
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+for waypoint in waypoints:
+    for a, b in waypoint.items():
+        print(f'{waypoints.index(waypoint)}:{(a,b)}')
